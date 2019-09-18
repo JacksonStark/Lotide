@@ -20,20 +20,22 @@ const assertArraysEqual = function(actual, expected) {
   }
 };
 
-// WITHOUT FUNCTION
+// FLATTEN FUNCTION
 
-const without = (source, itemsToRemove) => {
-  let perfect = source;
-  for (let i = 0; i < source.length; i++) {
-    for (let n = 0; n < itemsToRemove.length; n++) {
-      if (itemsToRemove[n] === source[i]) {
-        perfect.splice(i,1);
-        i=i-1;
+const flatten = (array) => {
+  let finished = [];
+  for (let i = 0; i < array.length; i++) {
+    if (Array.isArray(array[i]) === true) {
+      for (let n = 0; n < array[i].length; n++) {
+        finished.push(array[i][n]);
       }
+    } else {
+      finished.push(array[i]);
     }
   }
-  return perfect;
+  return finished;
 };
 
-// TEST CODE...
-console.log(without(['4','4'], ['4']));
+console.log(flatten([1, 2, [3, 4], 5, [6]]));
+
+//flatten([1, 2, [3, 4], 5, [6]]) // => [1, 2, 3, 4, 5, 6]

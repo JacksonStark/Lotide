@@ -21,7 +21,6 @@ const assertArraysEqual = function(actual, expected) {
 };
 
 
-
 // LETTER-POSITIONS FUNCTION
 
 const letterPositions = (phrase) => {
@@ -43,4 +42,4 @@ const letterPositions = (phrase) => {
 
 
 // TEST CODE
-console.log(assertArraysEqual(letterPositions('lighthouse in the house').h,[3,5,15,18]));
+assertArraysEqual(letterPositions('lighthouse in the house').h,[3,5,15,18]);

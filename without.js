@@ -28,7 +28,7 @@ const without = (source, itemsToRemove) => {
     for (let n = 0; n < itemsToRemove.length; n++) {
       if (itemsToRemove[n] === source[i]) {
         perfect.splice(i,1);
-        i=i-1;
+        i = i - 1;
       }
     }
   }

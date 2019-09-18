@@ -36,4 +36,4 @@ const without = (source, itemsToRemove) => {
 };
 
 // TEST CODE...
-console.log(without(['4','4'], ['4']));
+assertArraysEqual((without(['4','4'], ['4'])), []);

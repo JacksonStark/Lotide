@@ -36,6 +36,5 @@ const flatten = (array) => {
   return finished;
 };
 
-console.log(flatten([1, 2, [3, 4], 5, [6]]));
-
-//flatten([1, 2, [3, 4], 5, [6]]) // => [1, 2, 3, 4, 5, 6]
+// TEST CODE
+assertArraysEqual((flatten([1, 2, [3, 4], 5, [6]])), [1, 2, 3, 4, 5, 6]);

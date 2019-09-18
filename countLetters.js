@@ -25,4 +25,5 @@ const countLetters = (phrase) => {
   return result;
 };
 
+// TEST CODE
 console.log(countLetters('Jackson Robert Gillies Stark'));

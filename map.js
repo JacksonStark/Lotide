@@ -20,6 +20,9 @@ const assertArraysEqual = function(actual, expected) {
   }
 };
 
+
+
+
 // WORDS ARRAY FOR INPUT...
 const words = ['jackson', 'austin', 'chloe', 'tessa', 'carmen', 'curtis', 'pam', 'rod'];
 

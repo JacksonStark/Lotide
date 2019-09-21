@@ -38,6 +38,13 @@ const eqObjects = (objA, objB) => {
         if (eqArrays(objA[key], objB[key]) === false) {
           return false;
         }
+
+        // Checking if each key's value is an object...then using recursion...
+      } else if (typeof objA[key] === 'object' && typeof objB[key] === 'object') {
+        const result = eqObjects(objA[key], objB[key]);
+        if (!result) {
+          return false;
+        }
         
         // Checking if each key's value is a match...
       } else if (objA[key] !== objB[key]) {

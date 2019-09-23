@@ -1,12 +1,5 @@
-// ASSERT EQUAL FUNCTION...
-
-const assertEqual = function(actual, expected) {
-  if (actual === expected) {
-    console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
-  } else {
-    console.log(`🔴🔴🔴 Assertion Failed: ${actual} !== ${expected}`);
-  }
-};
+// ASSERT EQUAL...
+const assertEqual = require('./assertEqual');
 
 
 // COUNT-ONLY FUNCTION
@@ -25,17 +18,9 @@ const countOnly = (allItems, itemsToCount) => {
   return results;
 };
 
-const firstNames = [
-  "Karl",
-  "Salima",
-  "Agouhanna",
-  "Fang",
-  "Kavith",
-  "Jason",
-  "Salima",
-  "Fang",
-  "Joe"
-];
+// TEST CODE
+const firstNames = ["Karl", "Salima", "Agouhanna", "Fang",
+  "Kavith", "Jason", "Salima", "Fang", "Joe"];
 
 const result1 = countOnly(firstNames, { "Jason": true, "Karima": true, "Fang": true });
 

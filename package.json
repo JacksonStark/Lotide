@@ -1,0 +1,29 @@
+{
+  "name": "lotide-jackson.stark",
+  "version": "1.0.0",
+  "description": "Mini clone of the Lodash library",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "chai": "^4.2.0"
+  },
+  "devDependencies": {
+    "mocha": "^6.2.0"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JacksonStark/lotide.git"
+  },
+  "author": "Jackson Stark <https://github.com/JacksonStark> jacksonstark77@hotmail.com",
+  "contributors": ["Jake Fantin <https://github.JakeFantin> jakefantin@gmail.com"],
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JacksonStark/lotide/issues"
+  },
+  "homepage": "https://github.com/JacksonStark/lotide#readme"
+}
